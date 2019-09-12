@@ -24,19 +24,11 @@ public class TesteArrayList {
         lista.remove(0);
         System.out.println("Tamanho: " + lista.size());
 
-        Conta cc3 = new ContaCorrente(33, 311);
-        lista.add(cc3);
+        Conta cc3 = new ContaCorrente(22,22 );
+        boolean existe = lista.contains(cc3);
 
-        Conta cc4 = new ContaCorrente(33, 322);
-        lista.add(cc4);
-
-        for(int i = 0; i < lista.size(); i++) {
-            Conta conta = lista.get(i);
-            System.out.println(conta);
-        }
-
-        System.out.println("----------");
-
+        System.out.println("Já existe? " + existe);
+        
         for(Conta conta : lista) {   //for compactado 
             System.out.println(conta); 
         }
